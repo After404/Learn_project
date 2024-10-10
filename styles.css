@@ -18,7 +18,7 @@
      transform: translateY(-50%);
      width: 119.39px;
      height: 97.85px;
-     background-image: url('/Image/Group.svg');
+     background-image: url('./Image/Group.svg');
      background-repeat: no-repeat;
      background-size: 100px;
  }
@@ -54,7 +54,7 @@
      transform: translateY(-50%);
      width: 20px;
      height: 20px;
-     background-image: url('/Image/user.svg');
+     background-image: url('./Image/user.svg');
      background-repeat: no-repeat;
 
  }
@@ -66,7 +66,7 @@
      transform: translateY(-50%);
      width: 20px;
      height: 20px;
-     background-image: url('/Image/lock.svg');
+     background-image: url('./Image/lock.svg');
      background-repeat: no-repeat;
 
  }
