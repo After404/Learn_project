@@ -20,7 +20,8 @@
     position: relative;
 }
 
-.password_input {
+.password_input,
+.password_input :focus {
     background-color: #264ECA;
     width: 300px;
     height: 45px;
@@ -32,10 +33,12 @@
     font-family: 'Montserrat-ExtraLight', sans-serif;
     font-size: 14px;
     line-height: 20px;
+    outline: none;
 
 }
 
-.username_input {
+.username_input,
+.username_input :focus {
     background-color: #264ECA;
     width: 300px;
     height: 45px;
@@ -47,6 +50,7 @@
     font-family: 'Montserrat-ExtraLight', sans-serif;
     font-size: 14px;
     line-height: 20px;
+    outline: none;
 
 }
 
@@ -90,23 +94,30 @@
 
 }
 
-.forgot_password {
+.login_button:hover {
+    cursor: pointer;
+}
+
+.forgot_password,
+.forgot_password :focus {
     color: white;
     padding-left: 155px;
     padding-top: 11px;
-    font-family: 'Montserrat-SemiBold', sans-serif;
-
+    font-family: 'Montserrat-Regular', sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
+
     text-decoration: none;
+    outline: none;
 }
 
-.fotm::placeholder {
+.container ::placeholder {
     color: white;
 }
 
 body {
+    margin: 0;
     background-image: url(Image/BG.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -147,4 +158,11 @@ input:-webkit-autofill:active {
 
 input:-webkit-autofill {
     -webkit-text-fill-color: white !important;
+}
+
+.form-example {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
