@@ -102,7 +102,7 @@
     text-decoration: none;
 }
 
-.container ::placeholder {
+.fotm::placeholder {
     color: white;
 }
 
