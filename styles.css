@@ -7,78 +7,54 @@
 }
 
 .bg_image_group {
-    margin-top: 60px;
-    transform: translateY(-50%);
+    margin-bottom: 30px;
     width: 119px;
     height: 97px;
     background-image: url('./Image/Group.svg');
     background-repeat: no-repeat;
-    background-size: 100px;
+    background-size: cover;
 }
 
 .parent_icon {
     position: relative;
 }
 
-.password_input,
-.password_input :focus {
-    background-color: #264ECA;
+.input,
+.input :focus {
+    background-color: #2148C0;
     width: 300px;
     height: 45px;
+    margin: 10px;
     border-radius: 4px;
     border: 1px solid #ccc;
     color: #ffffff;
     padding-left: 35px;
-    margin: 10px;
     font-family: 'Montserrat-ExtraLight', sans-serif;
     font-size: 14px;
     line-height: 20px;
+
     outline: none;
-
 }
-
-.username_input,
-.username_input :focus {
-    background-color: #264ECA;
-    width: 300px;
-    height: 45px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    color: #ffffff;
-    padding-left: 35px;
-    margin: 10px;
-    font-family: 'Montserrat-ExtraLight', sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    outline: none;
-
-}
-
-
 
 .user_icon {
-    position: absolute;
-    left: 19px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
     background-image: url('./Image/user.svg');
-    background-repeat: no-repeat;
-
 }
 
 .lock_icon {
+    background-image: url('./Image/lock.svg');
+}
+
+.user_icon,
+.lock_icon {
     position: absolute;
-    left: 19px;
+    left: 25px;
     top: 50%;
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    background-image: url('./Image/lock.svg');
     background-repeat: no-repeat;
-
 }
+
 
 .login_button {
     width: 300px;
@@ -91,7 +67,6 @@
     font-family: 'Montserrat-SemiBold', sans-serif;
     font-weight: 600;
     line-height: 20px;
-
 }
 
 .login_button:hover {
@@ -122,7 +97,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #2148C0;
-
 }
 
 @font-face {
@@ -149,20 +123,17 @@ body {
     font-style: normal;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px #264ECA inset !important;
-}
-
-input:-webkit-autofill {
-    -webkit-text-fill-color: white !important;
-}
-
 .form-example {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #2148C0 inset !important;
+    -webkit-text-fill-color: white !important;
+} 
