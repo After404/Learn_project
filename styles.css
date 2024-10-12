@@ -7,10 +7,10 @@
 }
 
 .bg_image_group {
-    margin-bottom: 30px;
+    margin-bottom: 61px;
     width: 119px;
     height: 97px;
-    background-image: url('./Image/Group.svg');
+    background-image: url('./assets/Image/Group.svg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -19,8 +19,7 @@
     position: relative;
 }
 
-.input,
-.input :focus {
+.input {
     background-color: #2148C0;
     width: 300px;
     height: 45px;
@@ -33,28 +32,30 @@
     font-size: 14px;
     line-height: 20px;
 
+}
+
+.input:focus {
     outline: none;
 }
 
 .user_icon {
-    background-image: url('./Image/user.svg');
+    background-image: url('./assets/Image/user.svg');
 }
 
 .lock_icon {
-    background-image: url('./Image/lock.svg');
+    background-image: url('/assets/Image/lock.svg');
 }
 
 .user_icon,
 .lock_icon {
     position: absolute;
-    left: 25px;
+    left: 19px;
     top: 50%;
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
     background-repeat: no-repeat;
 }
-
 
 .login_button {
     width: 300px;
@@ -73,8 +74,7 @@
     cursor: pointer;
 }
 
-.forgot_password,
-.forgot_password :focus {
+.forgot_password {
     color: white;
     padding-left: 155px;
     padding-top: 11px;
@@ -82,8 +82,10 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
-
     text-decoration: none;
+}
+
+.forgot_password:focus {
     outline: none;
 }
 
@@ -93,7 +95,7 @@
 
 body {
     margin: 0;
-    background-image: url(Image/BG.svg);
+    background-image: url(./assets/Image/BG.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #2148C0;
@@ -102,7 +104,7 @@ body {
 @font-face {
     font-family: 'Montserrat-SemiBold';
     src:
-        url('Montserrat/static/Montserrat-SemiBold.ttf') format('truetype');
+        url('./assets/fonts/Montserrat-SemiBold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -110,7 +112,7 @@ body {
 @font-face {
     font-family: 'Montserrat-ExtraLight';
     src:
-        url('Montserrat/static/Montserrat-ExtraLight.ttf') format('truetype');
+        url('./assets/fonts/Montserrat-ExtraLight.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -118,7 +120,7 @@ body {
 @font-face {
     font-family: 'Montserrat-Regular';
     src:
-        url('Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+        url('./assets/fonts/Montserrat-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -136,4 +138,4 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px #2148C0 inset !important;
     -webkit-text-fill-color: white !important;
-} 
+}
